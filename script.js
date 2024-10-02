@@ -36,7 +36,9 @@ async function searchPlanet(input) {
   if (results.length > 0) {
     return showPlanet(results[0])
   }
-  planet_div.innerHTML = '<div class="search-not-found">Nenhum planeta encontrado :(</div>';
+  planet_div.innerHTML = `<div class="search-not-found">
+                            Esse planeta não está no mapa. Procure novamente, jovem padawan.
+                          </div>`;
   residentsTable.innerHTML = '';
 }
 
